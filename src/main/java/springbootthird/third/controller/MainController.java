@@ -14,9 +14,10 @@ public class MainController {
     private UserRepo userRepo;
 
     @GetMapping()
-    private Iterable<User> getUserList() {
+    public Iterable<User> getUserList() {
         return userRepo.findAll();
     }
+
 
 
 
