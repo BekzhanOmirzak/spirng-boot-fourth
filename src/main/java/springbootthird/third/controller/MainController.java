@@ -15,9 +15,6 @@ public class MainController {
 
     @GetMapping()
     private Iterable<User> getUserList() {
-        User user = new User();
-        user.setName("Bekzhan");
-        userRepo.save(user);
         return userRepo.findAll();
     }
 
